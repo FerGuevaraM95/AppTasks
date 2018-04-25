@@ -7,10 +7,27 @@ import Navbar from '../Navbar';
 console.log(tasks);
 
 class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            tasks
+        }
+    };
     render() {
+        const tasks = this.state.tasks.map((task, i) => {
+            return (
+                <div>
+                    {task.title}
+                </div>
+            )
+        });
+
         return (
             <div {...styles}>
                 <Navbar title="Tasks" />
+
+                {tasks}
+
                 <img src={logo} className="App__logo" alt="logo" />
             </div>
         );
