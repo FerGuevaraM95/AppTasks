@@ -1,0 +1,22 @@
+{
+    "tasks": [
+        {
+            "title": "Task1",
+            "responsible": "Mike",
+            "description": "Lorem Ipsum",
+            "priority": "low"
+        },
+        {
+            "title": "Task1",
+            "responsible": "Sus",
+            "description": "Lorem Ipsum 2",
+            "priority": "medium"
+        },
+        {
+            "title": "Task1",
+            "responsible": "Dan",
+            "description": "Lorem Ipsum 3",
+            "priority": "higth"
+        }
+    ]
+}
