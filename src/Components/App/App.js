@@ -4,6 +4,7 @@ import styles from './styles';
 
 import  { tasks } from '../../tasks.json';
 import Navbar from '../Navbar';
+import Card from '../Card';
 console.log(tasks);
 
 class App extends Component {
@@ -24,10 +25,10 @@ class App extends Component {
 
         return (
             <div {...styles}>
-                <Navbar title="Tasks" />
-
-                {tasks}
-
+                <Navbar title = "Tasks" />
+                <Card
+                    title = {this.state.title}
+                />
                 <img src={logo} className="App__logo" alt="logo" />
             </div>
         );
