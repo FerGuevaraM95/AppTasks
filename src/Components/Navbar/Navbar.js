@@ -5,7 +5,8 @@ const Navbar = (props) => (
     <nav {...styles}>
         <h1 className="Navbar__title">
             {props.title}
-        </h1>     
+            <span className="Navbar__count">{props.tasks.length}</span>
+        </h1>   
     </nav>
 );
 

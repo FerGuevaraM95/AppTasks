@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../Helpers/Icons/logo.svg';
+// import logo from '../../Helpers/Icons/logo.svg';
 import styles from './styles';
 
 import  { tasks } from '../../tasks.json';
@@ -28,7 +28,7 @@ class App extends Component {
 
         return (
             <div {...styles}>
-                <Navbar title = "Tasks" />
+                <Navbar title="Tasks" tasks={this.state.tasks} />
                 <CardList
                     tasks = {this.state.tasks}
                     isLoading={this.state.isloading}
