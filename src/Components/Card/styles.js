@@ -1,7 +1,7 @@
 import { css } from 'glamor';
 
 export default css({
-    width: 280,
+    width: 275,
     height: 200,
     margin: 20,
     border: '1px solid rgb(209, 208, 208)',
