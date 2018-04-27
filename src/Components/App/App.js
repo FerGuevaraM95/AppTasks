@@ -24,6 +24,7 @@ class App extends Component {
         //         </div>
         //     )
         // });
+        // <img src={logo} className="App__logo" alt="logo" />
 
         return (
             <div {...styles}>
@@ -32,7 +33,6 @@ class App extends Component {
                     tasks = {this.state.tasks}
                     isLoading={this.state.isloading}
                 />
-                <img src={logo} className="App__logo" alt="logo" />
             </div>
         );
     }
