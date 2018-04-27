@@ -4,30 +4,33 @@ import styles from './styles';
 
 import  { tasks } from '../../tasks.json';
 import Navbar from '../Navbar';
-import Card from '../Card';
+import CardList from '../CardList';
+
 console.log(tasks);
 
 class App extends Component {
     constructor() {
         super();
         this.state = {
-            tasks
+            tasks,
+            isLoading: false
         }
     };
     render() {
-        const tasks = this.state.tasks.map((task, i) => {
-            return (
-                <div>
-                    {task.title}
-                </div>
-            )
-        });
+        // const tasks = this.state.tasks.map((task, i) => {
+        //     return (
+        //         <div>
+        //             {task.title}
+        //         </div>
+        //     )
+        // });
 
         return (
             <div {...styles}>
                 <Navbar title = "Tasks" />
-                <Card
-                    title = {this.state.title}
+                <CardList
+                    tasks = {this.state.tasks}
+                    isLoading={this.state.isloading}
                 />
                 <img src={logo} className="App__logo" alt="logo" />
             </div>
