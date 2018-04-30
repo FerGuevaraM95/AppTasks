@@ -3,7 +3,7 @@ import { css } from 'glamor';
 export default css({
     width: 275,
     height: 200,
-    margin: 20,
+    margin: '25px 15px',
     border: '1px solid rgb(209, 208, 208)',
     boxShadow: '2px 2px rgba(101,110,116,0.1)',
     borderRadius: 5,

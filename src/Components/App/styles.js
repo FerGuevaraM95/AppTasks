@@ -1,11 +1,16 @@
 import { css } from 'glamor'
 
 export default css({
-    background: 'linear - gradient(to left, #EA384D, #D31027)',
     textAlign: 'center',
+    background: 'linear - gradient(to left, #EA384D, #D31027)',
+    ' .container': {
+        display: 'flex',
+        margin: '15px 0px'
+    },
     ' .App__logo': {
-        // animation: 'App - logo - spin infinite 20s linear',
-        height: '80px'
+        height: '80px',
+        animation: 'App-logo-spin infinite 20s linear'
+        
     }
 });
 
