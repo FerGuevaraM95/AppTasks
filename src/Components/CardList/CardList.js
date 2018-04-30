@@ -25,7 +25,7 @@ const CardList = (props) => {
                             title={task.title}
                             priority={task.priority}
                             description={task.description}
-                            responsible={task.responsible}     
+                            responsible={task.responsible}   
                         />
                     ))
             }
